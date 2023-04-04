@@ -1,100 +1,144 @@
-.p-button.p-button-whattapp, .p-buttonset.p-button-whattapp > .p-button, .p-splitbutton.p-button-whattapp > .p-button {
-  color: #FFFFFF;
+:root {
+  --ekocasa-green:rgba(33, 116, 74);
+  --ekocasa-black:#222023;
+}
+
+.p-button.p-button-whattapp,
+.p-buttonset.p-button-whattapp > .p-button,
+.p-splitbutton.p-button-whattapp > .p-button {
+  color: #ffffff;
   background: #0dc143;
   border: 1px solid #0dc143;
 }
 
-.p-button.p-button-whattapp:enabled:hover, .p-buttonset.p-button-whattapp > .p-button:enabled:hover, .p-splitbutton.p-button-whattapp > .p-button:enabled:hover {
-    background: #0ca73a;
-    color: #FFFFFF;
-    border-color: #0ca73a;
-  }
-  .p-button.p-button-whattapp:enabled:focus, .p-buttonset.p-button-whattapp > .p-button:enabled:focus, .p-splitbutton.p-button-whattapp > .p-button:enabled:focus {
-    box-shadow: 0 0 0 1px #ddb3e4;
-  }
-  .p-button.p-button-whattapp:enabled:active, .p-buttonset.p-button-whattapp > .p-button:enabled:active, .p-splitbutton.p-button-whattapp > .p-button:enabled:active {
-    background: #08772a;
-    color: #FFFFFF;
-    border-color: #08772a;
-  }
-  .p-button.p-button-whattapp.p-button-outlined, .p-buttonset.p-button-whattapp > .p-button.p-button-outlined, .p-splitbutton.p-button-whattapp > .p-button.p-button-outlined {
-    background-color: transparent;
-    color: #0dc143;
-    border: 1px solid;
-  }
-  .p-button.p-button-whattapp.p-button-outlined:enabled:hover, .p-buttonset.p-button-whattapp > .p-button.p-button-outlined:enabled:hover, .p-splitbutton.p-button-whattapp > .p-button.p-button-outlined:enabled:hover {
-    background: rgba(206, 147, 216, 0.04);
-    color: #0dc143;
-    border: 1px solid;
-  }
-  .p-button.p-button-whattapp.p-button-outlined:enabled:active, .p-buttonset.p-button-whattapp > .p-button.p-button-outlined:enabled:active, .p-splitbutton.p-button-whattapp > .p-button.p-button-outlined:enabled:active {
-    background: rgba(206, 147, 216, 0.16);
-    color: #0dc143;
-    border: 1px solid;
-  }
-  .p-button.p-button-whattapp.p-button-text, .p-buttonset.p-button-whattapp > .p-button.p-button-text, .p-splitbutton.p-button-whattapp > .p-button.p-button-text {
-    background-color: transparent;
-    color: #0dc143;
-    border-color: transparent;
-  }
-  .p-button.p-button-whattapp.p-button-text:enabled:hover, .p-buttonset.p-button-whattapp > .p-button.p-button-text:enabled:hover, .p-splitbutton.p-button-whattapp > .p-button.p-button-text:enabled:hover {
-    background: rgba(206, 147, 216, 0.04);
-    border-color: transparent;
-    color: #0dc143;
-  }
-  .p-button.p-button-whattapp.p-button-text:enabled:active, .p-buttonset.p-button-whattapp > .p-button.p-button-text:enabled:active, .p-splitbutton.p-button-whattapp > .p-button.p-button-text:enabled:active {
-    background: rgba(206, 147, 216, 0.16);
-    border-color: transparent;
-    color: #0dc143;
-  }
+.p-button.p-button-whattapp:enabled:hover,
+.p-buttonset.p-button-whattapp > .p-button:enabled:hover,
+.p-splitbutton.p-button-whattapp > .p-button:enabled:hover {
+  background: #0ca73a;
+  color: #ffffff;
+  border-color: #0ca73a;
+}
+.p-button.p-button-whattapp:enabled:focus,
+.p-buttonset.p-button-whattapp > .p-button:enabled:focus,
+.p-splitbutton.p-button-whattapp > .p-button:enabled:focus {
+  box-shadow: 0 0 0 1px #ddb3e4;
+}
+.p-button.p-button-whattapp:enabled:active,
+.p-buttonset.p-button-whattapp > .p-button:enabled:active,
+.p-splitbutton.p-button-whattapp > .p-button:enabled:active {
+  background: #08772a;
+  color: #ffffff;
+  border-color: #08772a;
+}
+.p-button.p-button-whattapp.p-button-outlined,
+.p-buttonset.p-button-whattapp > .p-button.p-button-outlined,
+.p-splitbutton.p-button-whattapp > .p-button.p-button-outlined {
+  background-color: transparent;
+  color: #0dc143;
+  border: 1px solid;
+}
+.p-button.p-button-whattapp.p-button-outlined:enabled:hover,
+.p-buttonset.p-button-whattapp > .p-button.p-button-outlined:enabled:hover,
+.p-splitbutton.p-button-whattapp > .p-button.p-button-outlined:enabled:hover {
+  background: rgba(206, 147, 216, 0.04);
+  color: #0dc143;
+  border: 1px solid;
+}
+.p-button.p-button-whattapp.p-button-outlined:enabled:active,
+.p-buttonset.p-button-whattapp > .p-button.p-button-outlined:enabled:active,
+.p-splitbutton.p-button-whattapp > .p-button.p-button-outlined:enabled:active {
+  background: rgba(206, 147, 216, 0.16);
+  color: #0dc143;
+  border: 1px solid;
+}
+.p-button.p-button-whattapp.p-button-text,
+.p-buttonset.p-button-whattapp > .p-button.p-button-text,
+.p-splitbutton.p-button-whattapp > .p-button.p-button-text {
+  background-color: transparent;
+  color: #0dc143;
+  border-color: transparent;
+}
+.p-button.p-button-whattapp.p-button-text:enabled:hover,
+.p-buttonset.p-button-whattapp > .p-button.p-button-text:enabled:hover,
+.p-splitbutton.p-button-whattapp > .p-button.p-button-text:enabled:hover {
+  background: rgba(206, 147, 216, 0.04);
+  border-color: transparent;
+  color: #0dc143;
+}
+.p-button.p-button-whattapp.p-button-text:enabled:active,
+.p-buttonset.p-button-whattapp > .p-button.p-button-text:enabled:active,
+.p-splitbutton.p-button-whattapp > .p-button.p-button-text:enabled:active {
+  background: rgba(206, 147, 216, 0.16);
+  border-color: transparent;
+  color: #0dc143;
+}
 
-  .p-button.p-button-mail, .p-buttonset.p-button-mail > .p-button, .p-splitbutton.p-button-mail > .p-button {
-    color: #FFFFFF;
-    background: #3B6B91;
-    border: 1px solid #3B6B91;
-  }
-  
-  .p-button.p-button-mail:enabled:hover, .p-buttonset.p-button-mail > .p-button:enabled:hover, .p-splitbutton.p-button-mail > .p-button:enabled:hover {
-      background: #31516A;
-      color: #FFFFFF;
-      border-color: #31516A;
-    }
-    .p-button.p-button-mail:enabled:focus, .p-buttonset.p-button-mail > .p-button:enabled:focus, .p-splitbutton.p-button-mail > .p-button:enabled:focus {
-      box-shadow: 0 0 0 1px #ddb3e4;
-    }
-    .p-button.p-button-mail:enabled:active, .p-buttonset.p-button-mail > .p-button:enabled:active, .p-splitbutton.p-button-mail > .p-button:enabled:active {
-      background: #24455F;
-      color: #FFFFFF;
-      border-color: #24455F;
-    }
-    .p-button.p-button-mail.p-button-outlined, .p-buttonset.p-button-mail > .p-button.p-button-outlined, .p-splitbutton.p-button-mail > .p-button.p-button-outlined {
-      background-color: transparent;
-      color: #3B6B91;
-      border: 1px solid;
-    }
-    .p-button.p-button-mail.p-button-outlined:enabled:hover, .p-buttonset.p-button-mail > .p-button.p-button-outlined:enabled:hover, .p-splitbutton.p-button-mail > .p-button.p-button-outlined:enabled:hover {
-      background: rgba(206, 147, 216, 0.04);
-      color: #3B6B91;
-      border: 1px solid;
-    }
-    .p-button.p-button-mail.p-button-outlined:enabled:active, .p-buttonset.p-button-mail > .p-button.p-button-outlined:enabled:active, .p-splitbutton.p-button-mail > .p-button.p-button-outlined:enabled:active {
-      background: rgba(206, 147, 216, 0.16);
-      color: #3B6B91;
-      border: 1px solid;
-    }
-    .p-button.p-button-mail.p-button-text, .p-buttonset.p-button-mail > .p-button.p-button-text, .p-splitbutton.p-button-mail > .p-button.p-button-text {
-      background-color: transparent;
-      color: #3B6B91;
-      border-color: transparent;
-    }
-    .p-button.p-button-mail.p-button-text:enabled:hover, .p-buttonset.p-button-mail > .p-button.p-button-text:enabled:hover, .p-splitbutton.p-button-mail > .p-button.p-button-text:enabled:hover {
-      background: rgba(206, 147, 216, 0.04);
-      border-color: transparent;
-      color: #3B6B91;
-    }
-    .p-button.p-button-mail.p-button-text:enabled:active, .p-buttonset.p-button-mail > .p-button.p-button-text:enabled:active, .p-splitbutton.p-button-mail > .p-button.p-button-text:enabled:active {
-      background: rgba(206, 147, 216, 0.16);
-      border-color: transparent;
-      color: #3B6B91;
-    }
-    
+.p-button.p-button-mail,
+.p-buttonset.p-button-mail > .p-button,
+.p-splitbutton.p-button-mail > .p-button {
+  color: #ffffff;
+  background: #3b6b91;
+  border: 1px solid #3b6b91;
+}
+
+.p-button.p-button-mail:enabled:hover,
+.p-buttonset.p-button-mail > .p-button:enabled:hover,
+.p-splitbutton.p-button-mail > .p-button:enabled:hover {
+  background: #31516a;
+  color: #ffffff;
+  border-color: #31516a;
+}
+.p-button.p-button-mail:enabled:focus,
+.p-buttonset.p-button-mail > .p-button:enabled:focus,
+.p-splitbutton.p-button-mail > .p-button:enabled:focus {
+  box-shadow: 0 0 0 1px #ddb3e4;
+}
+.p-button.p-button-mail:enabled:active,
+.p-buttonset.p-button-mail > .p-button:enabled:active,
+.p-splitbutton.p-button-mail > .p-button:enabled:active {
+  background: #24455f;
+  color: #ffffff;
+  border-color: #24455f;
+}
+.p-button.p-button-mail.p-button-outlined,
+.p-buttonset.p-button-mail > .p-button.p-button-outlined,
+.p-splitbutton.p-button-mail > .p-button.p-button-outlined {
+  background-color: transparent;
+  color: #3b6b91;
+  border: 1px solid;
+}
+.p-button.p-button-mail.p-button-outlined:enabled:hover,
+.p-buttonset.p-button-mail > .p-button.p-button-outlined:enabled:hover,
+.p-splitbutton.p-button-mail > .p-button.p-button-outlined:enabled:hover {
+  background: rgba(206, 147, 216, 0.04);
+  color: #3b6b91;
+  border: 1px solid;
+}
+.p-button.p-button-mail.p-button-outlined:enabled:active,
+.p-buttonset.p-button-mail > .p-button.p-button-outlined:enabled:active,
+.p-splitbutton.p-button-mail > .p-button.p-button-outlined:enabled:active {
+  background: rgba(206, 147, 216, 0.16);
+  color: #3b6b91;
+  border: 1px solid;
+}
+.p-button.p-button-mail.p-button-text,
+.p-buttonset.p-button-mail > .p-button.p-button-text,
+.p-splitbutton.p-button-mail > .p-button.p-button-text {
+  background-color: transparent;
+  color: #3b6b91;
+  border-color: transparent;
+}
+.p-button.p-button-mail.p-button-text:enabled:hover,
+.p-buttonset.p-button-mail > .p-button.p-button-text:enabled:hover,
+.p-splitbutton.p-button-mail > .p-button.p-button-text:enabled:hover {
+  background: rgba(206, 147, 216, 0.04);
+  border-color: transparent;
+  color: #3b6b91;
+}
+.p-button.p-button-mail.p-button-text:enabled:active,
+.p-buttonset.p-button-mail > .p-button.p-button-text:enabled:active,
+.p-splitbutton.p-button-mail > .p-button.p-button-text:enabled:active {
+  background: rgba(206, 147, 216, 0.16);
+  border-color: transparent;
+  color: #3b6b91;
+}
