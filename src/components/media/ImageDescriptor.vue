@@ -1,3 +1,41 @@
+<style scoped>
+    .p-image-descriptor {
+        display: block;
+        position: relative;
+        width: 400px;
+        height: 900px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: #FFFFFF;
+    }
+
+    .overlay {
+        display: block;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: #B5B0B0;
+        opacity: 1;
+        transition: opacity 1s ease-out;
+        font-size: 28px;
+    }
+
+    .overlay-content {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .invisible {
+        transition: opacity 1s ease-out;
+        opacity: 0;
+    }
+</style>
+
 <template>
     <div :class="buttonClass" @click="toggleOverlay">
         <slot name="out"></slot>
@@ -51,41 +89,3 @@ export default {
     }
 }
 </script>
-
-<style>
-    .p-image-descriptor {
-        display: block;
-        position: relative;
-        width: 400px;
-        height: 900px;
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        color: #FFFFFF;
-    }
-
-    .overlay {
-        display: block;
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        background-color: #B5B0B0;
-        opacity: 1;
-        transition: opacity 1s ease-out;
-        font-size: 28px;
-    }
-
-    .overlay-content {
-        height: 100%;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-    }
-
-    .invisible {
-        transition: opacity 1s ease-out;
-        opacity: 0;
-    }
-</style>

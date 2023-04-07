@@ -4,6 +4,7 @@ import 'primeicons/primeicons.css';
 import Button from 'primevue/button';
 import HeaderCollapse from '../components/layout/HeaderCollapse.vue';
 import ImageDescriptor from '../components/media/ImageDescriptor.vue';
+import VideoWall from '../components/media/VideoWall.vue';
 import Footer from '../components/layout/Footer.vue';
 import { GoogleMap, Marker } from 'vue3-google-map';
 
@@ -15,6 +16,7 @@ export default {
     HeaderCollapse,
     Marker,
     ImageDescriptor,
+    VideoWall,
     Footer
   }, 
   data() {
@@ -61,7 +63,17 @@ export default {
         
         </div>
     </section>
-    <section class="column product bc-grey">
+    <section>
+      <VideoWall src="video/video.mp4">
+        <template #overlay>
+            <div class="video-wall-container">
+                <div class="title">Lorem Ipsum </div>
+                <div class="subtitle">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </div>
+            </div>
+        </template>
+      </VideoWall>
+    </section>
+    <section class="column product">
         <ImageDescriptor img-url="img/card/pavimenti.webp">
             <template #out>Pavimenti</template>
             <template #inside>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in</template>
@@ -93,9 +105,6 @@ export default {
             <Marker :options="{ position: center }"  />
         </GoogleMap>
     </section>
-    <section style="background-color:grey;">
-      fornitori
-    </section>
     <Footer>
         <template #start>
             <div class="footer-data">
@@ -114,6 +123,18 @@ export default {
 </template>
 
 <style scoped>
+
+    .video-wall-container {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 30px;
+        padding: 0 400px;
+        flex-direction: column;
+        color: #FFFFFF;
+    }
 
     div.pi {
         margin-right: 20px;
