@@ -142,3 +142,13 @@
   border-color: transparent;
   color: #3b6b91;
 }
+
+@font-face {
+  font-family: blairmditc;
+  src: url(font/blairmditc.ttf) format('truetype');
+}
+
+body {
+  background-color: red;
+  font-family: blairmditc !important;
+}

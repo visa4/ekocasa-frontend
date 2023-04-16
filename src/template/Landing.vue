@@ -53,7 +53,7 @@ export default {
             </div>
         </template>
     </HeaderCollapse>
-    <section>
+    <section class="">
         <div class="mission">
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.    
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.    
@@ -74,27 +74,23 @@ export default {
       </VideoWall>
     </section>
     <section class="column product">
-        <ImageDescriptor img-url="img/card/pavimenti.webp">
+        <ImageDescriptor img-url="img/card/pavimenti.jpeg">
             <template #out>Pavimenti</template>
             <template #inside>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in</template>
         </ImageDescriptor>
-        <ImageDescriptor img-url="img/card/rivestimenti.jpg">
+        <ImageDescriptor img-url="img/card/rivestimenti.jpeg">
             <template #out>Rivestimenti</template>
             <template #inside>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in</template>
         </ImageDescriptor>
-        <ImageDescriptor img-url="img/card/pavimenti.webp">
+        <ImageDescriptor img-url="img/card/bagno.jpeg">
             <template #out>Bagno</template>
             <template #inside>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in</template>
         </ImageDescriptor>
-        <ImageDescriptor img-url="img/card/rivestimenti.jpg">
-            <template #out>Arredo bagno</template>
-            <template #inside>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in</template>
-        </ImageDescriptor>
-        <ImageDescriptor img-url="img/card/pavimenti.webp">
+        <ImageDescriptor img-url="img/card/porte.jpeg">
             <template #out>Porte</template>
             <template #inside>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in</template>
         </ImageDescriptor>
-        <ImageDescriptor img-url="img/card/rivestimenti.jpg">
+        <ImageDescriptor img-url="img/card/serramenti.jpeg">
             <template #out>Serramenti</template>
             <template #inside>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in</template> 
         </ImageDescriptor>
@@ -156,12 +152,16 @@ export default {
         display: flex;
 
         text-shadow: -1px 0 var(--ekocasa-black), 0 1px var(--ekocasa-black), 1px 0 var(--ekocasa-black), 0 -1px var(--ekocasa-black);
-
-        font-family: sans; color: #FFFFFF;
+        color: #FFFFFF;
         width: 80%;
         align-content: center;
         justify-content: center;
         
+    }
+
+    
+    :deep(.p-image-descriptor) {
+        text-shadow: -1px 0 var(--ekocasa-black), 0 1px var(--ekocasa-black), 1px 0 var(--ekocasa-black), 0 -1px var(--ekocasa-black) !important;
     }
 
     section {
