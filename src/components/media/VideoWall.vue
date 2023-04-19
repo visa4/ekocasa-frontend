@@ -53,13 +53,22 @@ export default {
     methods: {
         _calcVideoSize() {
             let width = this.$el.offsetWidth;
-            let height = Math.round((width/16) * 9);
+            let heightComputed = Math.round((width/16) * 9);
+            let height = heightComputed > this.$el.offsetHeight ? heightComputed : this.$el.offsetHeight;
             //this.$el.style.backgroundImage = `url("${this.imgUrl}")`;
 
             let video = this.$el.querySelector('video');
             video.style.height = height + 'px';
             video.style.width = width + 'px';
-            video.style.transform = `translateY(-${width/8}px)`;
+
+            if(height >  this.$el.offsetHeight) {
+                let widthTransform = (height - this.$el.offsetHeight) / 2;
+                console.log('ff', widthTransform);
+                video.style.transform = `translateY(-${widthTransform}px)`;
+            } else {
+                video.style.transform = `none`;
+            }
+            
         }
     }
 };

@@ -173,42 +173,51 @@ export default {
     </section>
     
     <section id="partner" class="row">
-        <div><img src="img/partner/charot-500.svg"></div>
-        <div><img src="img/partner/franki-500.svg"></div>
-        <div><img src="img/partner/hodly-500.svg"></div>
-        <div><img src="img/partner/hyper-500.svg"></div>
-        <div><img src="img/partner/peak-500.svg"></div>
+        <div class="partner-container row width-100 column wrap">
+            <div class="row center"><img src="img/partner/charot-500.svg"></div>
+            <div class="row center"><img src="img/partner/franki-500.svg"></div>
+            <div class="row center"><img src="img/partner/hodly-500.svg"></div>
+            <div class="row center"><img src="img/partner/hyper-500.svg"></div>
+            <div class="row center"><img src="img/partner/peak-500.svg"></div>
+        </div>
+    
     </section>
 
     <section id="imagesDescription" class="row product">
         <ImageDescriptor img-url="img/card/pavimenti.jpeg">
             <template #out>Pavimenti</template>
-            <template #inside>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in</template>
+            <template #inside>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            </template>
         </ImageDescriptor>
         <ImageDescriptor img-url="img/card/rivestimenti.jpeg">
             <template #out>Rivestimenti</template>
-            <template #inside>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in</template>
-        </ImageDescriptor>
+            <template #inside>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            </template>       </ImageDescriptor>
         <ImageDescriptor img-url="img/card/bagno.jpeg">
             <template #out>Bagno</template>
-            <template #inside>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in</template>
-        </ImageDescriptor>
+            <template #inside>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            </template>        </ImageDescriptor>
         <ImageDescriptor img-url="img/card/porte.jpeg">
             <template #out>Porte</template>
-            <template #inside>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in</template>
-        </ImageDescriptor>
+            <template #inside>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            </template>      </ImageDescriptor>
         <ImageDescriptor img-url="img/card/serramenti.jpeg">
             <template #out>Serramenti</template>
-            <template #inside>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in</template> 
-        </ImageDescriptor>
+            <template #inside>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            </template>       </ImageDescriptor>
     </section>
 
     <section id="videoWall">
       <VideoWall src="video/video.mp4">
         <template #overlay>
             <div class="video-wall-container">
-                <div class="title">SHOW ROOM</div>
-                <div class="subtitle">Vieni a vedere il nostro spazio troverai nostro spazio troverai nostro spazio troverai nostro spazio troverai nostro spazio troverai </div>
+                <div class="video-wall-title">SHOW ROOM</div>
+                <div class="videowall-subtitle">Vieni a vedere il nostro spazio troverai nostro spazio troverai nostro spazio troverai nostro spazio troverai nostro spazio troverai </div>
             </div>
         </template>
       </VideoWall>
@@ -270,7 +279,7 @@ export default {
         padding-bottom: 0px;
     }
 
-    #partner div {
+    .partner-container div {
         width: 15%;
     }
     .call-to-action {
@@ -298,9 +307,10 @@ export default {
         text-align: center;
         text-shadow: -1px 0 var(--ekocasa-black), 0 1px var(--ekocasa-black), 1px 0 var(--ekocasa-black), 0 -1px var(--ekocasa-black) !important;
     }
-    .video-wall-container .title {
+    .video-wall-title {
         font-size: 40px;
         padding-bottom: 20px;
+        width: 400px;
         
     }
     div.pi {
@@ -383,14 +393,14 @@ export default {
         cursor: pointer;
     }
     .img-container {
-        height: 300px;
-        width: 300px;
+        height: 400px;
+        width: 400px;
         margin-right: 8px;
         margin-bottom: 8px;;
     }
     .work {
-        height: 300px;
-        width: 300px;
+        height: 400px;
+        width: 400px;
     }
     :deep(.p-card-content) {
         text-align: center;
@@ -400,6 +410,9 @@ export default {
     }
     .mission {
         width: 70%;
+    }
+    .width-100 {
+        width: 100%;
     }
     .column {
         display: flex;
@@ -413,6 +426,10 @@ export default {
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+    }
+
+    .wrap {
+        flex-wrap: wrap;
     }
     .product {
         display: flex;
@@ -484,6 +501,28 @@ export default {
     }
 
     @media screen and (max-width: 600px) {
+
+        #maps {
+            flex-direction: column;
+        }
+
+        #maps :first-child {
+            width: 100% !important;
+        }
+        .map-data {
+            width: 100%;
+            height: 150px;
+        }
+        .video-wall-container {
+            padding: 0;
+        }
+        .videowall-subtitle {
+            display: none;
+        }
+        .partner-container div {
+           width: 100%;
+           margin-bottom: 20px;
+        }
         .p-image-descriptor {
             width: 100%  !important;
             margin-right: 0;
@@ -522,6 +561,7 @@ export default {
     }
 
     @media only screen and (min-width: 601px) and (max-width: 1200px) {
+
         .p-image-descriptor {
             width: 48%  !important;
             margin-bottom: 8px;
@@ -531,8 +571,57 @@ export default {
         }
     }
 
+    @media only screen and (min-width: 600px) and (max-width: 899px) {
+        .partner-container div {
+           width: 50%;
+           margin-bottom: 20px;
+        }
+
+        .video-wall-container {
+            padding: 0;
+        }
+
+        #maps {
+            flex-direction: column;
+        }
+
+        #maps :first-child {
+            width: 100% !important;
+        }
+
+        .map-data {
+            width: 100%;
+            height: 150px;
+        }
+    }
+
+
+    @media only screen and (min-width: 900px) and (max-width: 1199px) {
+        
+        .partner-container div {
+           width: 33%;
+           margin-bottom: 20px;
+        }
+    }
+
+    @media only screen and (min-width: 1201px) and (max-width: 1399px) {
+
+        .partner-container div {
+           width: 25%;
+           margin-bottom: 20px;
+        }
+    }
+
     @media only screen and (min-width: 601px) and (max-width: 1400px) {
 
+        .videowall-title {
+            display: none;
+        }
+  
+        .videowall-subtitle {
+            display: none;
+        }
+   
         :deep(.header-content) {
             width: 70%;
             text-align: center;
@@ -549,7 +638,6 @@ export default {
         }
 
         :deep(.p-sub-header) {
-            background-color: aqua;
             flex-direction: column;
         }
     }
