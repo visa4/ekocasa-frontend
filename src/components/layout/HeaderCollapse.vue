@@ -37,7 +37,7 @@ document.addEventListener("scroll", fadeHeader);
 </script>
 
 <template>
-  <header id="wrap">
+  <header id="wrap" class="p-header">
     <Toolbar id="toolbar" class="header">
       <template #start>
         <slot name="start"></slot>
@@ -49,7 +49,7 @@ document.addEventListener("scroll", fadeHeader);
         <slot name="end"></slot>
       </template>
     </Toolbar>
-    <div id="subHeader" class="sub-header">
+    <div id="subHeader" class="p-sub-header">
       <slot name="headerContent"></slot>
     </div>
   </header>
@@ -76,7 +76,7 @@ document.addEventListener("scroll", fadeHeader);
 
 
 
-  .sub-header {
+  .p-sub-header {
     height: 600px;
     width: 100%;
     border: 0;

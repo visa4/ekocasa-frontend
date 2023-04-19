@@ -55,7 +55,6 @@ export default {
             let width = this.$el.offsetWidth;
             let height = Math.round((width/16) * 9);
             //this.$el.style.backgroundImage = `url("${this.imgUrl}")`;
-            console.log(width, height,  this.$el);
 
             let video = this.$el.querySelector('video');
             video.style.height = height + 'px';
