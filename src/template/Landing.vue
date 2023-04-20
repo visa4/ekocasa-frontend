@@ -173,14 +173,17 @@ export default {
     </section>
     
     <section id="partner" class="row">
-        <div class="partner-container row width-100 column wrap">
-            <div class="row center"><img src="img/partner/charot-500.svg"></div>
-            <div class="row center"><img src="img/partner/franki-500.svg"></div>
-            <div class="row center"><img src="img/partner/hodly-500.svg"></div>
-            <div class="row center"><img src="img/partner/hyper-500.svg"></div>
-            <div class="row center"><img src="img/partner/peak-500.svg"></div>
-        </div>
-    
+        <div class="partner-container row width-100 column wrap">  
+            <div class="row center" style="background-image: url('img/partner/sanagostino.png')"></div>
+            <div class="row center" style="background-image: url('img/partner/marca-corona.png')"></div>
+            <div class="row center" style="background-image: url('img/partner/lea.png')"></div>
+            <div class="row center" style="background-image: url('img/partner/fondovalle.png')"></div>
+            <div class="row center" style="background-image: url('img/partner/moda.png')"></div>
+            <div class="row center" style="background-image: url('img/partner/cavallino.png')"></div>
+            <div class="row center" style="background-image: url('img/partner/biemme-tra.png')"></div>
+            <div class="row center" style="background-image: url('img/partner/essenza-tra.png')"></div>
+            <div class="row center" style="background-image: url('img/partner/bettio.png')"></div>
+        </div> 
     </section>
 
     <section id="imagesDescription" class="row product">
@@ -281,6 +284,9 @@ export default {
 
     .partner-container div {
         width: 15%;
+        border-right: 8px solid transparent;
+        border-left: 8px solid transparent;
+        border-bottom: 8px solid transparent;
     }
     .call-to-action {
         font-family: blairmditc !important;
@@ -448,6 +454,12 @@ export default {
         background-position: center center;
         background-image: url("img/header/logo.png");
     }
+    .partner-container div {
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 130px;
+    }
     .p-footer {
         height: 250px;
     }
@@ -521,7 +533,6 @@ export default {
         }
         .partner-container div {
            width: 100%;
-           margin-bottom: 20px;
         }
         .p-image-descriptor {
             width: 100%  !important;
@@ -574,7 +585,6 @@ export default {
     @media only screen and (min-width: 600px) and (max-width: 899px) {
         .partner-container div {
            width: 50%;
-           margin-bottom: 20px;
         }
 
         .video-wall-container {
@@ -600,7 +610,6 @@ export default {
         
         .partner-container div {
            width: 33%;
-           margin-bottom: 20px;
         }
     }
 
@@ -608,7 +617,6 @@ export default {
 
         .partner-container div {
            width: 25%;
-           margin-bottom: 20px;
         }
     }
 
