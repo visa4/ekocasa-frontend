@@ -93,7 +93,6 @@ document.addEventListener("scroll", fadeHeader);
   .logo {
     width: 200px;
     height: 80px;
-    background-image: url("../../assets/logo.png");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;

@@ -452,7 +452,7 @@ export default {
 
         background-repeat: no-repeat;
         background-position: center center;
-        background-image: url("img/header/logo.png");
+        background-image: var(--ekocasa-logo);
     }
     .partner-container div {
         background-position: center center;
