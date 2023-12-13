@@ -6,6 +6,9 @@
   "dependencies": {
     "primeicons": "6.0.1",
     "primevue": "3.26.0",
+
+
+    
     "vue": "3.2.47",
     "vue3-google-map": "^0.15.0"
   },
