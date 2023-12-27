@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+  nginx:
+    container_name: ekocasa-ngnix
+    image: node:16
+    volumes:
+      #- ./docker/nginx/conf/server.d:/etc/nginx/conf.d
+      #- ./docker/nginx/conf/mime.types:/etc/nginx/mime.types
+      - .:/var/www/application
+    command: >
+      sh -c "npm run build &&
+             npm run preview"
+    working_dir: /var/www/application
